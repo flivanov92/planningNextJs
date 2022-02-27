@@ -4,9 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Planning NextJs</title>
   </head>
   <body>
-    122121
+      <style>
+        body, html {
+          height: 100%;
+        }
+
+        body {
+          margin: 0;
+        }
+
+        *,
+        *::after,
+        *::before {
+          box-sizing: border-box;
+        }
+
+        .mypage {
+          background-color: hsl(0, 68%, 45%);
+          width: 320px;
+          height: 1380;
+          margin: 0 auto;
+          display: flex;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+       
+        .gridhelper {
+          width: 68px;
+          height: 68px;
+          background-color: hsl(71, 90%, 68%);
+        }
+
+        @media (min-width: 768px) {
+         .mypage {
+           width: 764px;
+           gap: 20px;
+           height: 1380;
+         }
+          .gridhelper {
+            width: 78px;
+            height: 78px;
+          }
+        }
+         @media (min-width: 1440px) {
+           .mypage {
+             width: 1440px;
+             height: 4000px;
+             gap: 24px;
+
+           }
+           .gridhelper {
+             width: 98px;
+             height: 100%;
+           }
+         }
+
+      </style>
+     
+
+        <div class="mypage">
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+          <div class="gridhelper"></div>
+        </div>
+      </div>
+    
   </body>
 </html>
