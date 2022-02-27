@@ -6,81 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Planning NextJs</title>
-  </head>
-  <body>
-      <style>
-        body, html {
+
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      .content {
+        height: 100%;
+        overflow: auto;
+      }
+
+      .mypage {
+        background-color: hsl(0, 68%, 45%);
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        /* position: relative; */
+        /* top: 0; */
+        opacity: 0.5;
+      }
+
+      .gridhelper {
+        overflow: auto;
+        width: 68px;
+        height: 5000px;
+        background-color: hsl(71, 90%, 68%);
+      }
+
+      p {
+        position: absolute;
+        margin-left: 180px;
+        margin-right: 150px;
+        z-index: 23123123;
+      }
+
+      @media (min-width: 768px) {
+        .mypage {
+          width: 764px;
+          gap: 20px;
+          height: auto;
+        }
+        .gridhelper {
+          width: 78px;
+          height: 5000px;
+        }
+      }
+      @media (min-width: 1440px) {
+        .mypage {
+          width: 1440px;
+          height: 4000px;
+          gap: 24px;
+        }
+        .gridhelper {
+          width: 98px;
           height: 100%;
         }
 
-        body {
-          margin: 0;
+        p {
+          margin-left: 400px;
+          margin-right: 500px;
         }
-
-        *,
-        *::after,
-        *::before {
-          box-sizing: border-box;
-        }
-
-        .mypage {
-          background-color: hsl(0, 68%, 45%);
-          width: 320px;
-          height: 1380;
-          margin: 0 auto;
-          display: flex;
-          gap: 16px;
-          flex-wrap: wrap;
-        }
-       
-        .gridhelper {
-          width: 68px;
-          height: 68px;
-          background-color: hsl(71, 90%, 68%);
-        }
-
-        @media (min-width: 768px) {
-         .mypage {
-           width: 764px;
-           gap: 20px;
-           height: 1380;
-         }
-          .gridhelper {
-            width: 78px;
-            height: 78px;
-          }
-        }
-         @media (min-width: 1440px) {
-           .mypage {
-             width: 1440px;
-             height: 4000px;
-             gap: 24px;
-
-           }
-           .gridhelper {
-             width: 98px;
-             height: 100%;
-           }
-         }
-
-      </style>
-     
-
-        <div class="mypage">
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-          <div class="gridhelper"></div>
-        </div>
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+        praesentium ipsa corrupti voluptates impedit at deserunt quos dicta,
+        accusamus sequi? Perspiciatis possimus itaque tempore rerum eius quia.
+        Enim, voluptatem quam! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Molestias praesentium ipsa corrupti voluptates impedit
+        at deserunt quos dicta, accusamus sequi? Perspiciatis possimus itaque
+        tempore rerum eius quia. Enim, voluptatem quam! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Molestias praesentium ipsa corrupti
+        voluptates impedit at deserunt quos dicta, accusamus sequi? Perspiciatis
+        possimus itaque tempore rerum eius quia. Enim, voluptatem quam! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
+        ipsa corrupti voluptates impedit at deserunt quos dicta, accusamus
+        sequi? Perspiciatis possimus itaque tempore rerum eius quia. Enim,
+        voluptatem quam!
+      </p>
+      <div class="mypage">
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
+        <div class="gridhelper"></div>
       </div>
-    
+    </div>
   </body>
 </html>
