@@ -36,8 +36,6 @@
         display: flex;
         gap: 16px;
         flex-wrap: wrap;
-        /* position: relative; */
-        /* top: 0; */
         opacity: 0.5;
       }
 
@@ -45,7 +43,18 @@
         overflow: auto;
         width: 68px;
         height: 5000px;
-        background-color: hsl(71, 90%, 68%);
+        background-color: hsl(71, 79%, 85%);
+      }
+
+      .image {
+        height: 200px;
+        width: 830px;
+        background-color: hsl(289, 90%, 19%);
+        position: absolute;
+        top: 0;
+        margin-left: 365px;
+        margin-right: 480px;
+
       }
 
       p {
@@ -78,15 +87,44 @@
         }
 
         p {
-          margin-left: 400px;
-          margin-right: 500px;
+          margin-left: 370px;
+          margin-right: 480px;
+          top: 200px;
         }
       }
     </style>
   </head>
   <body>
     <div class="content">
+      <div
+        class="image"
+        style="--image: url();
+        "
+      ></div>
       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+        praesentium ipsa corrupti voluptates impedit at deserunt quos dicta,
+        accusamus sequi? Perspiciatis possimus itaque tempore rerum eius quia.
+        Enim, voluptatem quam! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Molestias praesentium ipsa corrupti voluptates impedit
+        at deserunt quos dicta, accusamus sequi? Perspiciatis possimus itaque
+        tempore rerum eius quia. Enim, voluptatem quam! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Molestias praesentium ipsa corrupti
+        voluptates impedit at deserunt quos dicta, accusamus sequi? Perspiciatis
+        possimus itaque tempore rerum eius quia. Enim, voluptatem quam! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
+        ipsa corrupti voluptates impedit at deserunt quos dicta, accusamus
+        sequi? Perspiciatis possimus itaque tempore rerum eius quia. Enim,
+        voluptatem quam!
+      </p>
+      <div
+      class="image"
+      style="
+          top: 400px;
+          --image: url();
+          "
+      ></div>
+      <p style="top: 600px" ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
         praesentium ipsa corrupti voluptates impedit at deserunt quos dicta,
         accusamus sequi? Perspiciatis possimus itaque tempore rerum eius quia.
