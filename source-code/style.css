@@ -1,0 +1,84 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.content {
+  height: 100%;
+  overflow: auto;
+}
+
+.mypage {
+  background-color: hsl(0, 68%, 45%);
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  opacity: 0.5;
+}
+
+.gridhelper {
+  overflow: auto;
+  width: 68px;
+  height: 5000px;
+  background-color: hsl(71, 79%, 85%);
+}
+
+.image {
+  height: 200px;
+  width: 830px;
+  background-color: hsl(289, 90%, 19%);
+  background-image: var(--image);
+  position: absolute;
+  top: 0;
+  margin-left: 365px;
+  margin-right: 480px;
+}
+
+p {
+  position: absolute;
+  margin-left: 180px;
+  margin-right: 150px;
+  z-index: 23123123;
+}
+
+@media (min-width: 768px) {
+  .mypage {
+    width: 764px;
+    gap: 20px;
+    height: auto;
+  }
+  .gridhelper {
+    width: 78px;
+    height: 5000px;
+  }
+}
+@media (min-width: 1440px) {
+  .mypage {
+    width: 1440px;
+    height: 4000px;
+    gap: 24px;
+  }
+  .gridhelper {
+    width: 98px;
+    height: 100%;
+  }
+
+  p {
+    margin-left: 370px;
+    margin-right: 480px;
+    top: 200px;
+  }
+}

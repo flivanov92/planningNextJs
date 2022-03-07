@@ -6,101 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Planning NextJs</title>
-
-    <style>
-      body,
-      html {
-        height: 100%;
-      }
-
-      body {
-        margin: 0;
-      }
-
-      *,
-      *::after,
-      *::before {
-        box-sizing: border-box;
-      }
-
-      .content {
-        height: 100%;
-        overflow: auto;
-      }
-
-      .mypage {
-        background-color: hsl(0, 68%, 45%);
-        width: 320px;
-        height: auto;
-        margin: 0 auto;
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        opacity: 0.5;
-      }
-
-      .gridhelper {
-        overflow: auto;
-        width: 68px;
-        height: 5000px;
-        background-color: hsl(71, 79%, 85%);
-      }
-
-      .image {
-        height: 200px;
-        width: 830px;
-        background-color: hsl(289, 90%, 19%);
-        position: absolute;
-        top: 0;
-        margin-left: 365px;
-        margin-right: 480px;
-
-      }
-
-      p {
-        position: absolute;
-        margin-left: 180px;
-        margin-right: 150px;
-        z-index: 23123123;
-      }
-
-      @media (min-width: 768px) {
-        .mypage {
-          width: 764px;
-          gap: 20px;
-          height: auto;
-        }
-        .gridhelper {
-          width: 78px;
-          height: 5000px;
-        }
-      }
-      @media (min-width: 1440px) {
-        .mypage {
-          width: 1440px;
-          height: 4000px;
-          gap: 24px;
-        }
-        .gridhelper {
-          width: 98px;
-          height: 100%;
-        }
-
-        p {
-          margin-left: 370px;
-          margin-right: 480px;
-          top: 200px;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="content">
-      <div
-        class="image"
-        style="--image: url();
-        "
-      ></div>
+      <div class="image" style="--image: url()"></div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
         praesentium ipsa corrupti voluptates impedit at deserunt quos dicta,
@@ -115,19 +24,13 @@
         ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
         ipsa corrupti voluptates impedit at deserunt quos dicta, accusamus
         sequi? Perspiciatis possimus itaque tempore rerum eius quia. Enim,
-        voluptatem quam!!!
-        
-        Schimbam portul. 
-        Schimbam configul.
+        voluptatem quam!!! Schimbam portul. Schimbam configul.
       </p>
       <div
-      class="image"
-      style="
-          top: 400px;
-          --image: url();
-          "
+        class="image"
+        style="top: 400px; --image: url(/image/arrow.png)"
       ></div>
-      <p style="top: 600px" ">
+      <p style="top: 600px">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
         praesentium ipsa corrupti voluptates impedit at deserunt quos dicta,
         accusamus sequi? Perspiciatis possimus itaque tempore rerum eius quia.
@@ -141,9 +44,7 @@
         ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium
         ipsa corrupti voluptates impedit at deserunt quos dicta, accusamus
         sequi? Perspiciatis possimus itaque tempore rerum eius quia. Enim,
-        voluptatem quam!!!!
-
-        Nu sunt schimbari ?!!
+        voluptatem quam!!!! Nu sunt schimbari ?!!!
       </p>
       <div class="mypage">
         <div class="gridhelper"></div>
