@@ -16,6 +16,7 @@ body {
 .content {
   height: 100%;
   overflow: auto;
+  position: sticky;
 }
 
 .mypage {
@@ -38,20 +39,32 @@ body {
 
 .image {
   height: 200px;
-  width: 830px;
+  width: 951px;
   background-color: hsl(289, 90%, 19%);
   background-image: var(--image);
   position: absolute;
-  top: 0;
+  top: 10px;
   margin-left: 365px;
   margin-right: 480px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 p {
-  position: absolute;
   margin-left: 180px;
   margin-right: 150px;
   z-index: 23123123;
+  width: 951px;
+  position: absolute;
+}
+
+ol {
+  top: 200px;
+  position: absolute;
+  margin-left: 345px;
+  text-align: center;
+  z-index: 23123123;
+  line-height: 2;
 }
 
 @media (min-width: 768px) {
@@ -79,6 +92,10 @@ p {
   p {
     margin-left: 370px;
     margin-right: 480px;
-    top: 200px;
+    top: 800px;
+  }
+
+  .image {
+    width: 951px;
   }
 }
