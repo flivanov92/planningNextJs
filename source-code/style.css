@@ -15,8 +15,8 @@ body {
 
 .content {
   height: 100%;
-  overflow: auto;
-  position: sticky;
+  position: absolute;
+  margin-left: 365px;
 }
 
 .mypage {
@@ -31,16 +31,16 @@ body {
 }
 
 .gridhelper {
-  overflow: auto;
   width: 68px;
   height: 5000px;
   background-color: hsl(71, 79%, 85%);
+  position: sticky;
 }
 
 .image {
-  height: 200px;
+  height: 220px;
   width: 951px;
-  background-color: hsl(289, 90%, 19%);
+  background-color: hsl(329, 82%, 65%);
   background-image: var(--image);
   position: absolute;
   top: 10px;
@@ -48,23 +48,31 @@ body {
   margin-right: 480px;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-p {
-  margin-left: 180px;
-  margin-right: 150px;
-  z-index: 23123123;
-  width: 951px;
-  position: absolute;
+  background-position: center;
 }
 
 ol {
-  top: 200px;
-  position: absolute;
-  margin-left: 345px;
+  counter-reset: numar;
+  list-style-type: none;
   text-align: center;
-  z-index: 23123123;
+  top: 600px;
   line-height: 2;
+  align-items: center;
+  /* position: absolute; */
+}
+
+li {
+  list-style-type: none;
+}
+
+ol > li {
+  counter-increment: numar;
+}
+
+li::before {
+  content: counters(numar, ". ") ") ";
+  padding-right: 30px;
+  white-space: nowrap;
 }
 
 @media (min-width: 768px) {
