@@ -40,7 +40,7 @@ body {
 .image {
   height: 220px;
   width: 951px;
-  background-color: hsl(329, 82%, 65%);
+  /* background-color: hsl(182, 91%, 62%); */
   background-image: var(--image);
   position: absolute;
   top: 10px;
@@ -49,6 +49,27 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.dreptunghiroz {
+  background-color: hsl(329, 82%, 65%);
+  height: 100px;
+  width: 951px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 365px;
+}
+
+.patrat {
+  height: 68px;
+  width: 68px;
+  background-color: #7879f1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 ol {
@@ -58,7 +79,6 @@ ol {
   top: 600px;
   line-height: 2;
   align-items: center;
-  /* position: absolute; */
 }
 
 li {
