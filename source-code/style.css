@@ -32,7 +32,7 @@ body {
 
 .gridhelper {
   width: 68px;
-  height: 5000px;
+  height: 15000px;
   background-color: hsl(71, 79%, 85%);
   position: sticky;
 }
