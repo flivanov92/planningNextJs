@@ -16,7 +16,7 @@ body {
 .content {
   height: 100%;
   position: absolute;
-  margin-left: 365px;
+  inset: 0;
 }
 
 .mypage {
@@ -40,12 +40,10 @@ body {
 .image {
   height: 220px;
   width: 951px;
-  /* background-color: hsl(182, 91%, 62%); */
+  background-color: hsl(182, 91%, 62%);
   background-image: var(--image);
   position: absolute;
-  top: 10px;
-  margin-left: 365px;
-  margin-right: 480px;
+  inset: 0 365px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
