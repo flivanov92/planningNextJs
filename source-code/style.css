@@ -20,7 +20,7 @@ body {
 }
 
 .mypage {
-  background-color: hsl(0, 68%, 45%);
+  /* background-color: hsl(0, 68%, 45%); */
   width: 320px;
   height: auto;
   margin: 0 auto;
@@ -33,14 +33,14 @@ body {
 .gridhelper {
   width: 68px;
   height: 15000px;
-  background-color: hsl(71, 79%, 85%);
+  /* background-color: hsl(71, 79%, 85%); */
   position: sticky;
 }
 
 .image {
   height: 220px;
   width: 951px;
-  background-color: hsl(182, 91%, 62%);
+  /* background-color: hsl(182, 91%, 62%); */
   background-image: var(--image);
   position: absolute;
   inset: 0 365px;
@@ -49,16 +49,11 @@ body {
   background-position: center;
   display: flex;
   align-items: center;
+  filter: grayscale(0%);
 }
 
-.dreptunghiroz {
-  background-color: hsl(329, 82%, 65%);
-  height: 100px;
-  width: 951px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  margin-left: 365px;
+.image:hover {
+  filter: grayscale(100%);
 }
 
 .patrat {
@@ -68,6 +63,20 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-right: 100px;
+}
+
+i {
+  background-color: hsl(329, 82%, 65%);
+  width: 951px;
+  height: 100px;
+  border-bottom-left-radius: 22px;
+  border-top-right-radius: 22px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  margin: auto;
 }
 
 ol {
